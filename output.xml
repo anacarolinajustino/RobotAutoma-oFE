@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.7 on win32)" generated="20230127 12:02:51.073" rpa="false" schemaversion="3">
+<suite id="s1" name="Login2" source="C:\Users\ANACAROLINAJUSTINOLO\Downloads\Estudo\Automation_FB_robot\Tests\Login2.robot">
+<test id="s1-t1" name="Testes" line="23">
+<kw name=" testSetupBrowserstack">
+<kw name="Set Variable" library="BuiltIn">
+<var>${remoteUrl}</var>
+<arg>http://${browserstack_userName}:${browserstack_accessKey}@hub.browserstack.com:80/wd/hub</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230127 12:02:51.403" level="INFO">${remoteUrl} = http://anacarolinajusti_cqovWT:c9jQLB4yk3XjXiGU9dqV@hub.browserstack.com:80/wd/hub</msg>
+<status status="PASS" starttime="20230127 12:02:51.403" endtime="20230127 12:02:51.403"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>&amp;{desiredCapabilities}</var>
+<arg>os=${os}</arg>
+<arg>os_version=${osVersion}</arg>
+<arg>browser=${browser}</arg>
+<arg>browser_version=${browserVersion}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230127 12:02:51.404" level="INFO">&amp;{desiredCapabilities} = { os=windows | os_version=10 | browser=chrome | browser_version=78 }</msg>
+<status status="PASS" starttime="20230127 12:02:51.403" endtime="20230127 12:02:51.404"/>
+</kw>
+<status status="PASS" starttime="20230127 12:02:51.403" endtime="20230127 12:02:51.404"/>
+</kw>
+<status status="PASS" starttime="20230127 12:02:51.402" endtime="20230127 12:02:51.405"/>
+</test>
+<status status="PASS" starttime="20230127 12:02:51.075" endtime="20230127 12:02:51.406"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login2">Login2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
